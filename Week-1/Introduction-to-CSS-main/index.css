@@ -1,0 +1,118 @@
+/* Your CSS goes here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+}
+p {
+    line-height: 1.5;
+}
+
+/* Header Style */
+.nav-cont {
+    background-color: #454f6f;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-cont h1 {
+    padding-left: 60px;
+}
+.navbar {
+    padding-right: 60px;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+.navbar ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    color: #e6834c;
+    border-bottom: 2px solid #fff;
+}
+/* Main Hero style */
+
+.main-hero {
+    background-color: #e6834c;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-detail {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.main-detail p {
+    font-size: 64px;
+    padding-top: 50px;
+}
+.main-detail .hero {
+    font-size: 88px;
+    font-weight: bolder;
+}
+
+
+/* Main style */
+
+main {
+    width: 80%;
+    margin: 2% auto;
+}
+.container {
+    width: 100%;
+    /* display: flex; */
+}
+.left, .right {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    gap: 50px;
+}
+.left > div, .right > div {
+    width: 50%;
+}
+.right .contact {
+    text-align: center;
+}
+.box h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* About Style */
+
+.about {
+    width: 80%;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: lightsteelblue;
+}
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+.copyright {
+    text-align: center;
+    background-color: #e6834c;
+    padding: 15px 0;
+}
