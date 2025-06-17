@@ -9,7 +9,15 @@ Do the following:
 
 */
 
-
+/*
+// Answer 1
+let votingAge = 24;
+if (votingAge >= 18){
+   console.log(true); 
+}else {
+   console.log(false); 
+}
+*/
 
 /*
 Task 2 - Values
@@ -20,8 +28,17 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
-
-
+/*
+// Answer 2
+let val1 = "Value 1";
+let val2 = "Value 2";
+if (val1 == val1.valueOf()) {
+  val1 = val2.valueOf();
+  console.log(val1);
+} else {
+  console.warn("There is an error!");
+}
+ */
 
 /*
 Task 3 - Convert Strings to Numbers
@@ -34,6 +51,13 @@ Do the following:
    HINT: look up the Number method
 */
 
+/*
+const str = "1999";
+let numMethod = Number(str);
+console.log(numMethod);
+let convertToNum = parseInt(str);
+console.log(convertToNum);
+*/
 
 /*
 Task 4 - Mood Checker
@@ -45,20 +69,34 @@ Do the following:
 
 */
 
+/*
+const userCurrentMood = prompt("Enter your current mood");
+// console.log(userCurrentMood.toLocaleLowerCase());
+if (userCurrentMood.toLocaleLowerCase() == "happy") {
+  console.log("Yay me too!");
+} else if (userCurrentMood.toLocaleLowerCase() == "sad") {
+  console.log("Aw cheer up");
+} else {
+  console.log("So moody!");
+}
+ */
 
 /*
-
-
 Task 5 - Odd or Even
 
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 */
-
+/*
 var num; // write a number here
 
 // write your conditions here
-
+if (num % 2 == 0) {
+  console.log("number is odd", num);
+} else {
+  console.log("number is odd", num);
+}
+*/
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -102,6 +140,26 @@ It's okay for it to be slow.
 
 */
 
+/*
+for (let i =1; i <= 100; i++) {
+   if (i % 3 === 0){
+      console.log("Fizz");
+   } 
+   else if (i % 5 === 0){
+      console.log("Buzz");
+   } 
+   else if (i % 3 === 0 && i % 5 === 0) {
+     console.log("Fizz Buzz");
+   } 
+   else if (i % i == 0 && i % 1 == 0) {
+     console.log("prime", i);
+   } 
+   else {
+     console.log(i);
+   }
+   }
+*/
+
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
@@ -114,8 +172,12 @@ Using the vowelCounter function below do the following:
   HINT - you may need to study next week's content on arrays 
   HINT - try looking up the .includes() method
 */
-
-
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+/*
+const vowel = prompt("Enter Vowels here")
+function vowelCounter(vowel) {
+//   add your code here
+  let vowelCount = vowel.include("A", "a", "E", "e","I", "i","O", "o","U", "u")
+  return vowelCount.length;
 }
+console.log(vowelCounter());
+*/
