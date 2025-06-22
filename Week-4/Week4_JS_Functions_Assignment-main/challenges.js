@@ -214,29 +214,72 @@ Extra Credit:
 - Use an arrow function for at least one of the functions.
 */
 
+/*
+// Second Try - it is the correct answer
 
-function calculateAverage(name, scores, determineGrade){
-   let score = determineGrade(((scores[0] + scores[1] + scores[2]) / 3));
-   return score;
+function calculateAverage(scores) {
+  let ave = (scores[0] + scores[1] + scores[2]) / 3;
+  return Math.ceil(ave);
 }
 
-function determineGrade(score){
-   if(score >= 90){
-      console.log("A");
-   }else if(score >= 80){
-      console.log("B");
-   }else if(score >= 70){
-      console.log("C");
-   }else{
-      console.log("F");
-   }
+
+function determineGrade(scores) {
+   let av = calculateAverage(scores);
+  if (av >= 90) {
+   //  console.log("A");
+    return "A";
+  } else if (av >= 80) {
+   //  console.log("B");
+    return "B";
+  } else if (av >= 70) {
+   //  console.log("C");
+    return "C";
+  } else {
+   //  console.log("F");
+    return "F";
+  }
 }
+
+// console.log(calculateAverage([85, 90, 78]));
+// console.log(determineGrade([85, 90, 78]));
+
+function generateReport(name, scores){
+   let average = calculateAverage(scores);
+   let grade = determineGrade(scores);
+   return `${name} - Average Score: ${average}, Grade: ${grade}`;
+}
+
+console.log(generateReport("Amina", [85, 90, 78]));
+*/
+
+/* 
+// First trying
+
+// function calculateAverage(name, scores, determineGrade){
+//    let score = determineGrade(((scores[0] + scores[1] + scores[2]) / 3));
+//    return score;
+// }
+
+// function determineGrade(score){
+//    if(score >= 90){
+//       console.log("A");
+//    }else if(score >= 80){
+//       console.log("B");
+//    }else if(score >= 70){
+//       console.log("C");
+//    }else{
+//       console.log("F");
+//    }
+//    return Math.round(score);
+// }
+
 // console.log(calculateAverage("Amina",[85, 90, 78],determineGrade));
 
 // function generateReport(name, scores){
-//    calculateAverage(name, scores, determineGrade);
-//    determineGrade(score);
-//    return `${name} - Average Score: ${average}, Grade: ${determineGrade}`;
+//    let average = calculateAverage(name, scores, determineGrade);
+//    let grade = determineGrade(score);
+//    return `${name} - Average Score: ${average}, Grade: ${grade}`;
 // }
 
 // console.log(generateReport("Amina", [85, 90, 78]));
+*/
